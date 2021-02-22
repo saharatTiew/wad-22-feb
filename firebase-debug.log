@@ -1,0 +1,37 @@
+[debug] [2021-02-22T15:41:26.893Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T15:41:26.895Z] Command:       C:\PROGRA~1\nodejs\node.exe C:\Users\Saharat Tiew\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-22T15:41:26.895Z] CLI Version:   9.4.0
+[debug] [2021-02-22T15:41:26.896Z] Platform:      win32
+[debug] [2021-02-22T15:41:26.896Z] Node Version:  v12.14.1
+[debug] [2021-02-22T15:41:26.898Z] Time:          Mon Feb 22 2021 22:41:26 GMT+0700 (Indochina Time)
+[debug] [2021-02-22T15:41:26.899Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T15:41:26.899Z] 
+[debug] [2021-02-22T15:41:26.907Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-22T15:41:26.908Z] > authorizing via signed-in user
+[debug] [2021-02-22T15:41:26.908Z] [iam] checking project wad-22-feb-2021 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-22T15:41:26.910Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wad-22-feb-2021:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-22T15:41:27.272Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 15:41:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=205","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T15:41:27.274Z] > refreshing access token with scopes: []
+[debug] [2021-02-22T15:41:27.274Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T15:41:27.422Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 22 Feb 2021 15:41:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T15:41:27.429Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wad-22-feb-2021 [none]
+[debug] [2021-02-22T15:41:27.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wad-22-feb-2021 200
+[debug] [2021-02-22T15:41:27.801Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wad-22-feb-2021 {"projectId":"wad-22-feb-2021","projectNumber":"591020882945","displayName":"wad-22-feb-2021","name":"projects/wad-22-feb-2021","resources":{"hostingSite":"wad-22-feb-2021","storageBucket":"wad-22-feb-2021.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'wad-22-feb-2021'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-02-22T15:41:27.806Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-22T15:41:27.807Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T15:41:27.948Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 22 Feb 2021 15:41:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T15:41:27.954Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/wad-22-feb-2021:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n    match /{document=**} {\n      allow read, write: if false;\n    }\n\n    match /messages/{docID} {\n        allow read: if request.auth.uid != null;\n      allow create: if canCreateMessage();\n    }\n\n    // custom func to check if the user can send messages\n    function canCreateMessage() {\n        let isSignedIn = request.auth.uid != null;\n      let isOwner = request.auth.uid == request.resource.data.uid;\n\n      return isSignedIn && isOwner;\n    }\n  }\n}"}]}}
+[debug] [2021-02-22T15:41:29.277Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 15:41:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2021-02-22T15:41:29.280Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/wad-22-feb-2021/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
